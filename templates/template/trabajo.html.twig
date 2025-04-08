@@ -1,0 +1,13 @@
+<h1>hola {{nombre}}</h1>
+{% set edad=42 %}
+<p>tu edad es {{edad}}</p>
+{{ include('include.html.twig')}}
+
+<p>
+{% set html = '<b>Hola soy un texto en negritas</b>' %}
+{{html|raw}}
+</p>
+
+<p>
+Variable global: {{tamila}}
+</p>
